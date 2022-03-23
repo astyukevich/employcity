@@ -2049,17 +2049,9 @@ body._touch .menu__link {
     z-index: -1;
   }
 
-@supports (padding-top: clamp( 3.125rem , 2.4447278912rem  +  3.4013605442vw , 5rem )) {
-    .main-page {
-      padding-top: clamp( 3.125rem , 2.4447278912rem  +  3.4013605442vw , 5rem );
-    }
-}
-
-@supports not (padding-top: clamp( 3.125rem , 2.4447278912rem  +  3.4013605442vw , 5rem )) {
-    .main-page {
-      padding-top: calc(3.125rem + 1.875 * (100vw - 20rem) / 55.125);
-    }
-}
+  .main-page {
+    padding-top: 70px !important;
+  }
 
   .main-page__title {
     width: 100%;
