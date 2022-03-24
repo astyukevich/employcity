@@ -43,7 +43,7 @@
 
         text-transform: uppercase;
         width: 61%;
-        & span {
+        &_blue {
             color: $blue;
         }
     }
@@ -64,11 +64,11 @@
     &__subtitle {
         font-weight: 400;
         margin: 10px 0px 0px 10px;
-        & li {
+        
+    }
+    &__item {
             margin: 0px 0px 5px 0px;
         }
-    }
-
     &__buttons {
         display: flex;
         justify-content: flex-start;
