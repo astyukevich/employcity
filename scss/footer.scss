@@ -1,0 +1,149 @@
+//====================================================================================================
+.footer {
+    background-color: #3d4050;
+    &__container {
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        font-size: 13px;
+        line-height: 15px;
+        color: #c3c3c3;
+        padding: 28px 0px;
+        @media (max-width: $pc) {
+            font-size: 12px;
+        }
+        @media (max-width: $tablet) {
+            flex-direction: row-reverse;
+            flex-wrap: wrap;
+        }
+        @media (max-width: $mobile) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    &__text {
+        display: flex;
+        align-items: center;
+        width: 29%;
+        @media (max-width: $tablet) {
+            width: 100%;
+            justify-content: center;
+            margin-top: rem(20);
+        }
+    }
+
+    &__text-item {
+        color: #fff;
+        @media (max-width: $tablet) {
+            display: flex;
+            text-align: center;
+        }
+    }
+
+    &__pay {
+        display: flex;
+        border-right: 1px solid #c3c3c3;
+        border-left: 1px solid #c3c3c3;
+        padding: 0px 30px;
+        width: 41%;
+        justify-content: space-around;
+        @media (max-width: $pc) {
+            padding: 0px 0px;
+        }
+        @media (max-width: $tablet) {
+            border-right: 0px;
+            width: 50%;
+            padding-left: 12px;
+            
+        }
+        @media (max-width: $mobile) {
+            width: 100%;
+            padding-left: 0px;
+            border: 0px;
+            justify-content: space-around;
+            width: 79%;
+            margin-right: 12px;
+            border-bottom: 1px solid #c3c3c3;
+            padding-bottom: 24px;
+        }
+        @media (max-width: $mobileSmall) { 
+            margin-right: 0px;
+        }
+    }
+
+    &__pay-block {
+        display: flex;
+        align-items: center;
+
+
+        @media (max-width: $mobileSmall) {
+            flex-direction: column;
+            & .__icons-footer {
+                margin-right: 0;
+                margin-bottom: 5px;
+            }
+        }
+        
+    }
+
+    &__pay-icon {
+    }
+
+    &__pay-name {
+        margin-right: 20px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__contacts {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 29%;
+        @media (max-width: $tablet) {
+            width: 46%;
+        }
+        @media (max-width: $mobile) {
+            width: 100%;
+            margin-top: 20px;
+            justify-content: space-around;
+        }
+    }
+    &__contacts-block {
+        display: flex;
+        align-items: center;
+        margin-right: 35px;
+        @media (max-width: $pc) {
+            margin-right: 20px;
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__contacts-icon {
+        display: flex;
+    }
+
+    &__contacts-text {
+        display: flex;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+.__icons-footer {
+    width: 21px;
+    height: 21px;
+    margin-right: 10px;
+}
+
+//====================================================================================================

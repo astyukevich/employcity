@@ -1,0 +1,84 @@
+// Заголовки, общие БЄМ блоки и проче...
+.btn {
+    
+    @include adaptiveValue("font-size", 13, 10);
+    text-transform: uppercase;
+    color: #fff;
+    background-color: $blue;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 10px;
+    transition: all 0.3s;
+    &_w {
+        color: #2A2B30;
+        background-color: #fff;
+        border-color: #2A2B30;
+        &:hover {
+            color: #fff;
+            border-color: #fff;
+        }
+    }
+    &:hover {
+        background-color: $blue_active;
+        
+    }
+}
+
+.__title {
+    display: flex;
+    justify-content: center;
+    font-family: 'Lato', 'san-serif';
+    color: #fff;
+    text-transform: uppercase;
+    width: 100%;
+    @include adaptiveValue("font-size", 36, 20);
+    & span {
+        color: $blue;
+    }
+}
+
+.__subtitle {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    @include adaptiveValue("font-size", 18, 14);
+    color: #BBBBBB;
+    line-height: 20px;
+}
+
+
+
+
+
+
+  .button-form {
+    margin: 20px auto 20px auto;
+    width: 31%;
+    @media (max-width:$mobile){
+         width: 54%; 
+         
+    }
+}
+
+.select__content {
+    font-size: 18px;
+    @media (max-width:$mobile){
+          font-size: 14px;
+    }
+}
+
+
+.simplebar-scrollbar::before {
+    background: #3E9CDC!important;
+}
+.simplebar-scrollbar.simplebar-visible::before {
+    opacity: 0.9!important;
+    
+  }
+
+
